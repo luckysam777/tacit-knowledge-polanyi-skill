@@ -1,5 +1,105 @@
 # Tacit Knowledge (Polanyi) Skill for Codex
 
+[中文说明](#中文说明) | [English](#english)
+
+## 中文说明
+
+这是一个面向 Codex 的中文优先 skill，用来解释、比较和应用 Michael Polanyi 的“默会知识”理论。
+
+适用场景包括：
+
+- 解释“默会知识”“缄默知识”“隐性知识”“显性知识”
+- 比较 tacit knowledge 和 explicit knowledge
+- 分析学徒制、技能传承、组织学习、经验判断
+- 将波兰尼视角应用到管理、教育、产品、研究、AI
+- 生成课堂讨论题、讲义提纲、案例分析骨架
+
+本仓库包含这些版本：
+
+- `tacit-knowledge-polanyi/`：Codex / 通用版
+- `platforms/openclaw/tacit-knowledge-polanyi/`：OpenClaw 版
+- `platforms/claude-code/tacit-knowledge-polanyi/`：Claude Code 版
+- `platforms/hermes/tacit-knowledge-polanyi/`：Hermes 兼容版
+
+### 中文安装
+
+使用脚本安装默认 Codex / 通用版：
+
+```bash
+./install.sh
+```
+
+安装指定平台版本：
+
+```bash
+./install.sh --target openclaw
+./install.sh --target claude-code
+./install.sh --target hermes --dest ~/.hermes/skills
+./install.sh --target all
+```
+
+Windows PowerShell：
+
+```powershell
+.\install.ps1
+.\install.ps1 -Target openclaw
+.\install.ps1 -Target claude-code
+.\install.ps1 -Target hermes -Dest "$HOME\.hermes\skills"
+.\install.ps1 -Target all
+```
+
+也可以直接从 GitHub 安装：
+
+Codex / 通用版：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path tacit-knowledge-polanyi
+```
+
+OpenClaw 版：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path platforms/openclaw/tacit-knowledge-polanyi
+```
+
+Claude Code 版：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path platforms/claude-code/tacit-knowledge-polanyi
+```
+
+Hermes 兼容版：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path platforms/hermes/tacit-knowledge-polanyi
+```
+
+使用示例：
+
+```text
+用 $tacit-knowledge-polanyi 解释默会知识和显性知识的区别
+用 $tacit-knowledge-polanyi 分析 AI 是否拥有默会知识
+用 $tacit-knowledge-polanyi 拆解一个企业里的技能传承问题
+```
+
+详细中文文档见：
+[README_zh.md](README_zh.md)
+
+说明：
+
+- OpenClaw 和 Claude Code 路径参考了你本机已有环境
+- Hermes 在当前机器上没有找到明确技能目录约定，所以仓库提供的是兼容版目录，具体安装路径取决于你的 Hermes 环境
+
+## English
+
 A Chinese-first Codex skill for explaining, comparing, and applying Michael Polanyi's concept of tacit knowledge across management, education, research, product work, and AI discussion.
 
 ## Overview
@@ -37,6 +137,8 @@ tacit-knowledge-polanyi-skill/
   README.md
   README_zh.md
   LICENSE
+  install.sh
+  install.ps1
   tacit-knowledge-polanyi/
     SKILL.md
     agents/
@@ -193,7 +295,3 @@ This repository now ships several variants:
 ## Open Source License
 
 This repository is released under the MIT License.
-
-## 中文说明
-
-这是一个面向 Codex 的中文优先 skill，用来解释和应用波兰尼的“默会知识”理论。仓库里已经包含可直接安装的 skill 目录，适合管理、教育、产品、研究、AI 等场景。安装后重启 Codex 即可使用。
