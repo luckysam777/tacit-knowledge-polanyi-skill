@@ -8,6 +8,12 @@ This repository contains one installable Codex skill:
 
 - `tacit-knowledge-polanyi`
 
+It also contains platform-specific skill packages for:
+
+- `OpenClaw`
+- `Claude Code`
+- `Hermes-compatible skill runners`
+
 The skill is designed for tasks such as:
 
 - explaining tacit knowledge, explicit knowledge, and related terminology
@@ -29,6 +35,7 @@ Polanyi's idea is often referenced, but practical explanations are usually eithe
 ```text
 tacit-knowledge-polanyi-skill/
   README.md
+  README_zh.md
   LICENSE
   tacit-knowledge-polanyi/
     SKILL.md
@@ -36,16 +43,49 @@ tacit-knowledge-polanyi-skill/
       openai.yaml
     references/
       polanyi-notes.md
+  platforms/
+    openclaw/
+      tacit-knowledge-polanyi/
+    claude-code/
+      tacit-knowledge-polanyi/
+    hermes/
+      tacit-knowledge-polanyi/
 ```
 
 ## Installation
 
 ### Install from GitHub
 
+Codex / generic skill:
+
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo luckysam777/tacit-knowledge-polanyi-skill \
   --path tacit-knowledge-polanyi
+```
+
+OpenClaw:
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path platforms/openclaw/tacit-knowledge-polanyi
+```
+
+Claude Code:
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path platforms/claude-code/tacit-knowledge-polanyi
+```
+
+Hermes-compatible version:
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path platforms/hermes/tacit-knowledge-polanyi
 ```
 
 Restart Codex after installation so the skill can be discovered.
@@ -65,6 +105,17 @@ The final structure should look like:
 ```
 
 Then restart Codex.
+
+Platform-specific manual locations:
+
+- OpenClaw: `~/.openclaw/skills/tacit-knowledge-polanyi/`
+- Claude Code: `~/.claude/skills/tacit-knowledge-polanyi/`
+- Hermes: copy the Hermes-compatible folder into your Hermes skill directory
+
+Hermes note:
+
+- this repository includes a Hermes-compatible package layout
+- the exact local install path depends on your Hermes distribution
 
 ## Example Prompts
 
@@ -98,6 +149,15 @@ Use $tacit-knowledge-polanyi to break down a knowledge-transfer problem inside a
 - researchers or students reading Polanyi
 - product and engineering teams discussing expertise and judgment
 - AI practitioners exploring the limits of codification
+
+## Multi-Platform Packages
+
+This repository now ships several variants:
+
+- `tacit-knowledge-polanyi/`: Codex and general skill format
+- `platforms/openclaw/tacit-knowledge-polanyi/`: OpenClaw-oriented package
+- `platforms/claude-code/tacit-knowledge-polanyi/`: Claude Code-oriented package
+- `platforms/hermes/tacit-knowledge-polanyi/`: Hermes-compatible package
 
 ## Open Source License
 

@@ -18,6 +18,12 @@
 
 - `tacit-knowledge-polanyi/`
 
+同时也包含多个平台版本：
+
+- `platforms/openclaw/tacit-knowledge-polanyi/`
+- `platforms/claude-code/tacit-knowledge-polanyi/`
+- `platforms/hermes/tacit-knowledge-polanyi/`
+
 目录结构如下：
 
 ```text
@@ -31,16 +37,49 @@ tacit-knowledge-polanyi-skill/
       openai.yaml
     references/
       polanyi-notes.md
+  platforms/
+    openclaw/
+      tacit-knowledge-polanyi/
+    claude-code/
+      tacit-knowledge-polanyi/
+    hermes/
+      tacit-knowledge-polanyi/
 ```
 
 ## 安装方式
 
 ### 从 GitHub 安装
 
+Codex / 通用版：
+
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo luckysam777/tacit-knowledge-polanyi-skill \
   --path tacit-knowledge-polanyi
+```
+
+OpenClaw 版：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path platforms/openclaw/tacit-knowledge-polanyi
+```
+
+Claude Code 版：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path platforms/claude-code/tacit-knowledge-polanyi
+```
+
+Hermes 兼容版：
+
+```bash
+python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
+  --path platforms/hermes/tacit-knowledge-polanyi
 ```
 
 安装后重启 Codex。
@@ -60,6 +99,17 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
 ```
 
 然后重启 Codex。
+
+多平台手动安装路径建议：
+
+- OpenClaw: `~/.openclaw/skills/tacit-knowledge-polanyi/`
+- Claude Code: `~/.claude/skills/tacit-knowledge-polanyi/`
+- Hermes: 复制到你的 Hermes skills 目录
+
+说明：
+
+- OpenClaw 和 Claude Code 路径参考了你本机已有环境
+- Hermes 在当前机器上没有找到明确技能目录约定，所以仓库提供的是“兼容版目录”，具体放置路径取决于你的 Hermes 运行环境
 
 ## 使用示例
 

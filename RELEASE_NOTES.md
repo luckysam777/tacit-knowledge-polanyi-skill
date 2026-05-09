@@ -12,3 +12,4 @@ Included in this release:
 - reference notes for management, education, product, research, and AI contexts
 - MIT license
 - bilingual repository presentation with an English README and a dedicated Chinese README
+- platform-specific packages for OpenClaw, Claude Code, and Hermes-compatible runners
