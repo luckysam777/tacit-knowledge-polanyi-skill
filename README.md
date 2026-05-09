@@ -1,22 +1,30 @@
-# tacit-knowledge-polanyi-skill
+# Tacit Knowledge (Polanyi) Skill for Codex
 
-一个面向 Codex 的中文优先 skill，用来解释、比较和应用 Michael Polanyi 的“默会知识（Tacit Knowledge）”理论。
+A Chinese-first Codex skill for explaining, comparing, and applying Michael Polanyi's concept of tacit knowledge across management, education, research, product work, and AI discussion.
 
-## 这个仓库包含什么
+## Overview
 
-仓库内提供一个可安装的 Codex skill：
+This repository contains one installable Codex skill:
 
-- `tacit-knowledge-polanyi/`
+- `tacit-knowledge-polanyi`
 
-这个 skill 适合这些场景：
+The skill is designed for tasks such as:
 
-- 解释默会知识、缄默知识、隐性知识、显性知识
-- 比较 tacit knowledge 与 explicit knowledge
-- 分析学徒制、技能传承、组织学习、经验判断
-- 把波兰尼理论应用到管理、教育、产品、研究、AI
-- 生成中文讨论题、讲解提纲、案例分析框架
+- explaining tacit knowledge, explicit knowledge, and related terminology
+- comparing tacit and explicit knowledge in a compact, practical way
+- analyzing apprenticeship, skill transfer, organizational learning, and expert judgment
+- applying a Polanyi lens to management, teaching, product design, research, and AI
+- generating Chinese-first teaching prompts, discussion questions, and case-analysis structures
 
-## 目录结构
+## Why This Skill Exists
+
+Polanyi's idea is often referenced, but practical explanations are usually either too abstract or too shallow. This skill aims to bridge that gap:
+
+- conceptually precise enough for theory discussion
+- practical enough for management and training use
+- optimized for Chinese-language prompting by default
+
+## Repository Layout
 
 ```text
 tacit-knowledge-polanyi-skill/
@@ -30,57 +38,71 @@ tacit-knowledge-polanyi-skill/
       polanyi-notes.md
 ```
 
-## 安装
+## Installation
 
-### 方式一：从 GitHub 安装
-
-把下面的 `<your-github-name>` 替换成你的 GitHub 用户名：
+### Install from GitHub
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo <your-github-name>/tacit-knowledge-polanyi-skill \
+  --repo luckysam777/tacit-knowledge-polanyi-skill \
   --path tacit-knowledge-polanyi
 ```
 
-安装完成后，重启 Codex 以加载新 skill。
+Restart Codex after installation so the skill can be discovered.
 
-### 方式二：手动安装
+### Manual Installation
 
-把 `tacit-knowledge-polanyi/` 整个目录复制到：
+Copy the `tacit-knowledge-polanyi/` directory into:
 
 ```text
 ~/.codex/skills/
 ```
 
-最终结构应为：
+The final structure should look like:
 
 ```text
 ~/.codex/skills/tacit-knowledge-polanyi/SKILL.md
 ```
 
-然后重启 Codex。
+Then restart Codex.
 
-## 使用示例
+## Example Prompts
 
 ```text
-用 $tacit-knowledge-polanyi 解释默会知识和显性知识的区别
+Use $tacit-knowledge-polanyi to explain the difference between tacit knowledge and explicit knowledge.
 ```
 
 ```text
-用 $tacit-knowledge-polanyi 分析 AI 是否拥有默会知识
+Use $tacit-knowledge-polanyi to analyze whether AI can be said to possess tacit knowledge.
 ```
 
 ```text
-用 $tacit-knowledge-polanyi 拆解一个企业里的技能传承问题
+Use $tacit-knowledge-polanyi to break down a knowledge-transfer problem inside a company.
 ```
 
-## 设计原则
+```text
+用 $tacit-knowledge-polanyi 解释默会知识和显性知识的区别。
+```
 
-- 默认中文优先
-- 兼顾理论解释和实践应用
-- 避免把默会知识简化为“没写文档”
-- 强调默会知识与显性知识的互补关系
+## Skill Characteristics
 
-## 开源协议
+- Chinese-first by default
+- structured for both conceptual explanation and practical application
+- avoids reducing tacit knowledge to "undocumented information"
+- treats tacit and explicit knowledge as complementary rather than mutually exclusive
 
-本仓库采用 MIT License。
+## Intended Audience
+
+- educators and trainers
+- managers working on capability transfer
+- researchers or students reading Polanyi
+- product and engineering teams discussing expertise and judgment
+- AI practitioners exploring the limits of codification
+
+## Open Source License
+
+This repository is released under the MIT License.
+
+## 中文说明
+
+这是一个面向 Codex 的中文优先 skill，用来解释和应用波兰尼的“默会知识”理论。仓库里已经包含可直接安装的 skill 目录，适合管理、教育、产品、研究、AI 等场景。安装后重启 Codex 即可使用。
