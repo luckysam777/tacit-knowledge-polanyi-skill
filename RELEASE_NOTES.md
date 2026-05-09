@@ -11,3 +11,4 @@ Included in this release:
 - localized prompts and terminology for Chinese usage
 - reference notes for management, education, product, research, and AI contexts
 - MIT license
+- bilingual repository presentation with an English README and a dedicated Chinese README
