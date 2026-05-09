@@ -1,0 +1,7 @@
+interface:
+  display_name: "默会知识（波兰尼）"
+  short_description: "中文解释与应用波兰尼默会知识"
+  default_prompt: "使用 $tacit-knowledge-polanyi 用中文解释或应用波兰尼意义上的默会知识。"
+
+policy:
+  allow_implicit_invocation: true
