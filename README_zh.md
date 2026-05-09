@@ -48,6 +48,25 @@ tacit-knowledge-polanyi-skill/
 
 ## 安装方式
 
+### 用脚本安装
+
+安装默认 Codex / 通用版：
+
+```bash
+./install.sh
+```
+
+安装指定平台版本：
+
+```bash
+./install.sh --target openclaw
+./install.sh --target claude-code
+./install.sh --target hermes --dest ~/.hermes/skills
+./install.sh --target all
+```
+
+脚本会覆盖目标目录里已有的 `tacit-knowledge-polanyi` 安装。
+
 ### 从 GitHub 安装
 
 Codex / 通用版：

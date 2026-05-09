@@ -13,3 +13,4 @@ Included in this release:
 - MIT license
 - bilingual repository presentation with an English README and a dedicated Chinese README
 - platform-specific packages for OpenClaw, Claude Code, and Hermes-compatible runners
+- install.sh for one-command installation across supported targets

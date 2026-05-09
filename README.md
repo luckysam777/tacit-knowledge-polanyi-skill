@@ -54,6 +54,25 @@ tacit-knowledge-polanyi-skill/
 
 ## Installation
 
+### Install with script
+
+Install the default Codex version:
+
+```bash
+./install.sh
+```
+
+Install a platform-specific version:
+
+```bash
+./install.sh --target openclaw
+./install.sh --target claude-code
+./install.sh --target hermes --dest ~/.hermes/skills
+./install.sh --target all
+```
+
+The script replaces any existing `tacit-knowledge-polanyi` installation in the target directory.
+
 ### Install from GitHub
 
 Codex / generic skill:
