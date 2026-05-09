@@ -1,5 +1,11 @@
 # Tacit Knowledge (Polanyi) Skill for Codex
 
+![GitHub release](https://img.shields.io/github/v/release/luckysam777/tacit-knowledge-polanyi-skill)
+![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)
+![Platforms](https://img.shields.io/badge/platforms-Codex%20%7C%20OpenClaw%20%7C%20Claude%20Code%20%7C%20Hermes-blue)
+![Language](https://img.shields.io/badge/language-Chinese--first-red)
+![Type](https://img.shields.io/badge/type-AI%20Skill-orange)
+
 [中文说明](#中文说明) | [English](#english)
 
 ## 中文说明
