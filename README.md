@@ -73,6 +73,18 @@ Install a platform-specific version:
 
 The script replaces any existing `tacit-knowledge-polanyi` installation in the target directory.
 
+### Install on Windows
+
+Use PowerShell:
+
+```powershell
+.\install.ps1
+.\install.ps1 -Target openclaw
+.\install.ps1 -Target claude-code
+.\install.ps1 -Target hermes -Dest "$HOME\.hermes\skills"
+.\install.ps1 -Target all
+```
+
 ### Install from GitHub
 
 Codex / generic skill:

@@ -67,6 +67,18 @@ tacit-knowledge-polanyi-skill/
 
 脚本会覆盖目标目录里已有的 `tacit-knowledge-polanyi` 安装。
 
+### Windows 安装
+
+使用 PowerShell：
+
+```powershell
+.\install.ps1
+.\install.ps1 -Target openclaw
+.\install.ps1 -Target claude-code
+.\install.ps1 -Target hermes -Dest "$HOME\.hermes\skills"
+.\install.ps1 -Target all
+```
+
 ### 从 GitHub 安装
 
 Codex / 通用版：
